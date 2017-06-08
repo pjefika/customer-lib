@@ -5,43 +5,23 @@
  */
 package br.net.gvt.efika.customer;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
-public class EfikaCustomer{
+public class EfikaCustomer {
 
     private String designador, instancia, designadorAcesso;
 
-    private List<InventarioRede> rede;
+    private InventarioRede rede;
 
-    private List<InventarioServico> servicos;
+    private InventarioServico servicos;
 
     public EfikaCustomer() {
-        rede = new ArrayList<>();
-        servicos = new ArrayList<>();
+        rede = new InventarioRede();
+        servicos = new InventarioServico();
     }
 
     public EfikaCustomer(String designador) {
         this.designador = designador;
-        rede = new ArrayList<>();
-        servicos = new ArrayList<>();
-    }
-
-    public void adicionar(InventarioRede r) {
-        this.rede.add(r);
-    }
-
-    public void adicionar(InventarioServico s) {
-        this.servicos.add(s);
-    }
-
-    public String getDesignadorAcesso() {
-        return designadorAcesso;
-    }
-
-    public void setDesignadorAcesso(String designadorAcesso) {
-        this.designadorAcesso = designadorAcesso;
+        rede = new InventarioRede();
+        servicos = new InventarioServico();
     }
 
     public String getDesignador() {
@@ -60,20 +40,30 @@ public class EfikaCustomer{
         this.instancia = instancia;
     }
 
-    public List<InventarioRede> getRede() {
+    public String getDesignadorAcesso() {
+        return designadorAcesso;
+    }
+
+    public void setDesignadorAcesso(String designadorAcesso) {
+        this.designadorAcesso = designadorAcesso;
+    }
+
+    public InventarioRede getRede() {
         return rede;
     }
 
-    public void setRede(List<InventarioRede> rede) {
+    public void setRede(InventarioRede rede) {
         this.rede = rede;
     }
 
-    public List<InventarioServico> getServicos() {
+    public InventarioServico getServicos() {
         return servicos;
     }
 
-    public void setServicos(List<InventarioServico> servicos) {
+    public void setServicos(InventarioServico servicos) {
         this.servicos = servicos;
     }
+    
+    
 
 }
