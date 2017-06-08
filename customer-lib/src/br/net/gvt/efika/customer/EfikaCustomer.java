@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.efika.cliente;
+package br.net.gvt.customer;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Cliente{
+public class EfikaCustomer{
 
     private String designador, instancia, designadorAcesso;
 
@@ -17,12 +17,12 @@ public class Cliente{
 
     private List<InventarioServico> servicos;
 
-    public Cliente() {
+    public EfikaCustomer() {
         rede = new ArrayList<>();
         servicos = new ArrayList<>();
     }
 
-    public Cliente(String designador) {
+    public EfikaCustomer(String designador) {
         this.designador = designador;
         rede = new ArrayList<>();
         servicos = new ArrayList<>();
