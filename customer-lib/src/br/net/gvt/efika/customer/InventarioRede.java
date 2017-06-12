@@ -16,6 +16,10 @@ public class InventarioRede {
         return ipDslam;
     }
 
+    public Integer getCvLan() {
+        return porta + 100;
+    }
+
     public void setIpDslam(String ipDslam) {
         this.ipDslam = ipDslam;
     }
