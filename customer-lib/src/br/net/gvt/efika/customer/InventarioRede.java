@@ -17,7 +17,7 @@ public class InventarioRede {
     }
 
     public Integer getCvLan() {
-        return porta + 100;
+        return sequencial + 100;
     }
 
     public void setIpDslam(String ipDslam) {
