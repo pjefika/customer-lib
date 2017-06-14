@@ -7,7 +7,7 @@ package br.net.gvt.efika.customer;
 public class InventarioRede {
 
     private String ipDslam, vendorDslam, modeloDslam;
-    private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast;
+    private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
 
     public InventarioRede() {
     }
@@ -18,6 +18,10 @@ public class InventarioRede {
 
     public Integer getCvLan() {
         return sequencial + 100;
+    }
+
+    public void setCvLan(Integer cvLan) {
+        this.cvLan = cvLan;
     }
 
     public void setIpDslam(String ipDslam) {
