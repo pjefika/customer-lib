@@ -17,7 +17,7 @@ public class InventarioRede {
     }
 
     public Integer getCvLan() {
-        return sequencial + 100;
+        return cvLan;
     }
 
     public void setCvLan(Integer cvLan) {
