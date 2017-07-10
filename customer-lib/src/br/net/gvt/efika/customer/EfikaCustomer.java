@@ -5,6 +5,9 @@
  */
 package br.net.gvt.efika.customer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EfikaCustomer {
 
     private String designador, instancia, designadorAcesso;
@@ -13,9 +16,12 @@ public class EfikaCustomer {
 
     private InventarioServico servicos;
 
+    private List<CustomerAssert> asserts;
+
     public EfikaCustomer() {
         rede = new InventarioRede();
         servicos = new InventarioServico();
+        asserts = new ArrayList<>();
     }
 
     public EfikaCustomer(String designador) {
@@ -63,7 +69,13 @@ public class EfikaCustomer {
     public void setServicos(InventarioServico servicos) {
         this.servicos = servicos;
     }
-    
-    
+
+    public List<CustomerAssert> getAsserts() {
+        return asserts;
+    }
+
+    public void setAsserts(List<CustomerAssert> asserts) {
+        this.asserts = asserts;
+    }
 
 }
