@@ -17,6 +17,9 @@ public class CustomerAssert {
 
     private Boolean value;
 
+    public CustomerAssert() {
+    }
+
     public CustomerAssert(AssertsEnum asserts, Boolean value) {
         this.asserts = asserts;
         this.value = value;
@@ -28,6 +31,14 @@ public class CustomerAssert {
 
     public Boolean getValue() {
         return value;
+    }
+
+    public void setAsserts(AssertsEnum asserts) {
+        this.asserts = asserts;
+    }
+
+    public void setValue(Boolean value) {
+        this.value = value;
     }
 
 }
