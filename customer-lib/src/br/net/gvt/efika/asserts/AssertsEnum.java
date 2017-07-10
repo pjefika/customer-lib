@@ -17,6 +17,8 @@ public enum AssertsEnum {
     RUIDO_CHIADO("Reclamação Ruído e Chiado?"),
     IS_ADSL("É ADSL?"),
     IS_REPARO("É Reparo?"),
+    CIRCUITO_ATIVO("Circuito Ativo no TBS?"),
+    HAS_BLOQUEIO_RADIUS("Possui bloqueio no Radius?"),
     DIVERGENCIA_TBS_RADIUS("Existe divergencia entre TBS e Radius?");
 
     private final String pergunta;
