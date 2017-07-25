@@ -6,6 +6,7 @@ package br.net.gvt.efika.customer;
  */
 public class InventarioRede {
 
+    private TipoRede tipo;
     private String ipDslam, vendorDslam, modeloDslam;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
 
@@ -106,6 +107,14 @@ public class InventarioRede {
 
     public void setVlanMulticast(Integer vlanMulticast) {
         this.vlanMulticast = vlanMulticast;
+    }
+
+    public TipoRede getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoRede tipo) {
+        this.tipo = tipo;
     }
 
 }
