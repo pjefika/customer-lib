@@ -41,4 +41,13 @@ public class CustomerAssert {
         this.value = value;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return equals((CustomerAssert)obj);
+    }
+
+    public boolean equals(CustomerAssert dev) {
+        return dev.getAsserts().equals(this.getAsserts()) && dev.getValue().equals(this.getValue());
+    }
+
 }
