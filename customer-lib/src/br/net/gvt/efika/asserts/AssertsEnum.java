@@ -16,6 +16,7 @@ public enum AssertsEnum {
     LINHA_MUDA("Reclamação Linha Muda?"),
     RUIDO_CHIADO("Reclamação Ruído e Chiado?"),
     IS_ADSL("É ADSL?"),
+    IS_SIP("É SIP?"),
     IS_REPARO("É Reparo?"),
     CIRCUITO_ATIVO("Circuito Ativo no TBS?"),
     HAS_BLOQUEIO_RADIUS("Possui bloqueio no Radius?"),
