@@ -24,8 +24,8 @@ public enum AssertsEnum {
     RESYNC_MENOR_5("Resync < 5?"),
     RESYNC_MENOR_50("Resync < 50?"),
     RESYNC_MENOR_300("Resync < 300?"),
-    PACOTES_DOWN_MENOR_6000("Pacotes de DOWN > 6000?"),
-    PACOTES_UP_MENOR_4000("Pacotes de UP > 4000?"),
+    PACOTES_DOWN_MAIOR_6000("Pacotes de DOWN > 6000?"),
+    PACOTES_UP_MAIOR_4000("Pacotes de UP > 4000?"),
     ATT_DOWN_OK("Attainable Rate Download OK?"),
     ATT_UP_OK("Attainable Rate Upload OK?"),
     ORIGINOU_CHAMADA_POS_ABERTURA_ORDEM("Telefone originou chamada após abertura da ordem?");
