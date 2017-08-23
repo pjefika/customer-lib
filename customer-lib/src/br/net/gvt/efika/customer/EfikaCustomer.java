@@ -15,12 +15,15 @@ public class EfikaCustomer {
     private InventarioRede rede;
 
     private InventarioServico servicos;
+    
+    private InventarioLinha linha;
 
     private List<CustomerAssert> asserts;
 
     public EfikaCustomer() {
         rede = new InventarioRede();
         servicos = new InventarioServico();
+        linha = new InventarioLinha();
         asserts = new ArrayList<>();
     }
 
@@ -28,6 +31,7 @@ public class EfikaCustomer {
         this.designador = designador;
         rede = new InventarioRede();
         servicos = new InventarioServico();
+        linha = new InventarioLinha();
     }
 
     public String getDesignador() {
@@ -78,4 +82,12 @@ public class EfikaCustomer {
         this.asserts = asserts;
     }
 
+    public InventarioLinha getLinha() {
+        return linha;
+    }
+
+    public void setLinha(InventarioLinha linha) {
+        this.linha = linha;
+    }
+    
 }
