@@ -9,6 +9,6 @@ package br.net.gvt.efika.customer;
  *
  * @author G0041775
  */
-public enum TipoLinha {
-    NORTEL, IMS_H248, IMS_V5, IMS_SIP;
+public enum TipoCentral {
+    TDM, IMS;
 }

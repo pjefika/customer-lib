@@ -11,18 +11,18 @@ package br.net.gvt.efika.customer;
  */
 public class InventarioLinha {
 
-    private TipoLinha tipo;
+    private TipoCentral tipo;
 
     private String dn, central;
 
     public InventarioLinha() {
     }
 
-    public TipoLinha getTipo() {
+    public TipoCentral getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoLinha tipo) {
+    public void setTipo(TipoCentral tipo) {
         this.tipo = tipo;
     }
 
