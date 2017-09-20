@@ -7,10 +7,19 @@ package br.net.gvt.efika.customer;
 public class InventarioRede {
 
     private TipoRede tipo;
+    private OrigemRede origem;
     private String ipDslam, vendorDslam, modeloDslam;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
 
     public InventarioRede() {
+    }
+
+    public OrigemRede getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(OrigemRede origem) {
+        this.origem = origem;
     }
 
     public String getIpDslam() {
