@@ -9,7 +9,7 @@ public class InventarioRede {
     private TipoRede tipo;
     private OrigemRede origem;
     private OrigemPlanta planta;
-    private String ipDslam, vendorDslam, modeloDslam;
+    private String ipDslam, vendorDslam, modeloDslam, idOnt;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
 
     public InventarioRede() {
@@ -134,6 +134,13 @@ public class InventarioRede {
     public void setPlanta(OrigemPlanta planta) {
         this.planta = planta;
     }
-    
+
+    public String getIdOnt() {
+        return idOnt;
+    }
+
+    public void setIdOnt(String idOnt) {
+        this.idOnt = idOnt;
+    }
 
 }
