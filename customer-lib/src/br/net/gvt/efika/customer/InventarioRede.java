@@ -9,7 +9,7 @@ public class InventarioRede {
     private TipoRede tipo;
     private OrigemRede origem;
     private OrigemPlanta planta;
-    private String ipDslam, vendorDslam, modeloDslam, idOnt;
+    private String ipDslam, vendorDslam, modeloDslam, idOnt, terminal;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
 
     public InventarioRede() {
@@ -141,6 +141,14 @@ public class InventarioRede {
 
     public void setIdOnt(String idOnt) {
         this.idOnt = idOnt;
+    }
+
+    public String getTerminal() {
+        return terminal;
+    }
+
+    public void setTerminal(String terminal) {
+        this.terminal = terminal;
     }
 
 }
