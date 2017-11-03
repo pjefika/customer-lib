@@ -5,6 +5,9 @@
  */
 package br.net.gvt.efika.customer;
 
+import br.net.gvt.efika.enums.TecnologiaTv;
+import br.net.gvt.efika.enums.TecnologiaLinha;
+
 /**
  *
  * @author G0042204
@@ -13,7 +16,9 @@ public class InventarioServico {
 
     private Long velDown, velUp;
 
-    private Boolean isSip, isHib;
+    private TecnologiaTv tipoTv;
+
+    private TecnologiaLinha tipoLinha;
 
     public InventarioServico() {
     }
@@ -34,20 +39,20 @@ public class InventarioServico {
         this.velUp = velUp;
     }
 
-    public Boolean getIsSip() {
-        return isSip;
+    public TecnologiaTv getTipoTv() {
+        return tipoTv;
     }
 
-    public void setIsSip(Boolean isSip) {
-        this.isSip = isSip;
+    public void setTipoTv(TecnologiaTv tipoTv) {
+        this.tipoTv = tipoTv;
     }
 
-    public Boolean getIsHib() {
-        return isHib;
+    public TecnologiaLinha getTipoLinha() {
+        return tipoLinha;
     }
 
-    public void setIsHib(Boolean isHib) {
-        this.isHib = isHib;
+    public void setTipoLinha(TecnologiaLinha tipoLinha) {
+        this.tipoLinha = tipoLinha;
     }
 
 }
