@@ -10,12 +10,12 @@ import java.util.List;
 
 public class EfikaCustomer {
 
-    private String designador, instancia, designadorAcesso;
+    private String designador, instancia, designadorAcesso, designadorTv;
 
     private InventarioRede rede;
 
     private InventarioServico servicos;
-    
+
     private InventarioLinha linha;
 
     private List<CustomerAssert> asserts;
@@ -89,5 +89,13 @@ public class EfikaCustomer {
     public void setLinha(InventarioLinha linha) {
         this.linha = linha;
     }
-    
+
+    public String getDesignadorTv() {
+        return designadorTv;
+    }
+
+    public void setDesignadorTv(String designadorTv) {
+        this.designadorTv = designadorTv;
+    }
+
 }
