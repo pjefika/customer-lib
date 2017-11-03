@@ -11,6 +11,7 @@ public class InventarioRede {
     private OrigemPlanta planta;
     private String ipDslam, vendorDslam, modeloDslam, idOnt, terminal;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
+    private Boolean bhs;
 
     public InventarioRede() {
     }
@@ -149,6 +150,14 @@ public class InventarioRede {
 
     public void setTerminal(String terminal) {
         this.terminal = terminal;
+    }
+
+    public Boolean getBhs() {
+        return bhs;
+    }
+
+    public void setBhs(Boolean bhs) {
+        this.bhs = bhs;
     }
 
 }
