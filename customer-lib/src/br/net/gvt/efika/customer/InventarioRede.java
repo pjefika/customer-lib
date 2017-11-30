@@ -9,7 +9,7 @@ public class InventarioRede {
     private TipoRede tipo;
     private OrigemRede origem;
     private OrigemPlanta planta;
-    private String ipDslam, vendorDslam, modeloDslam, idOnt, terminal;
+    private String ipDslam, vendorDslam, modeloDslam, idOnt, terminal, ipMulticast;
     private Integer slot, porta, sequencial, logica, rin, vlanVoip, vlanVod, vlanMulticast, cvLan;
     private Boolean bhs;
 
@@ -158,6 +158,14 @@ public class InventarioRede {
 
     public void setBhs(Boolean bhs) {
         this.bhs = bhs;
+    }
+
+    public String getIpMulticast() {
+        return ipMulticast;
+    }
+
+    public void setIpMulticast(String ipMulticast) {
+        this.ipMulticast = ipMulticast;
     }
 
 }
