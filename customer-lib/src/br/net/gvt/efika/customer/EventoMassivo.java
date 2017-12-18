@@ -5,6 +5,8 @@
  */
 package br.net.gvt.efika.customer;
 
+import java.util.Calendar;
+
 /**
  *
  * @author G0042204
@@ -18,6 +20,10 @@ public class EventoMassivo {
     private String tipoAfetacao;
 
     private String desc;
+
+    private Calendar dataAbertura;
+
+    private Calendar dataPrevista;
 
     public EventoMassivo() {
     }
@@ -52,6 +58,22 @@ public class EventoMassivo {
 
     public void setTipoAfetacao(String tipoAfetacao) {
         this.tipoAfetacao = tipoAfetacao;
+    }
+
+    public Calendar getDataAbertura() {
+        return dataAbertura;
+    }
+
+    public void setDataAbertura(Calendar dataAbertura) {
+        this.dataAbertura = dataAbertura;
+    }
+
+    public Calendar getDataPrevista() {
+        return dataPrevista;
+    }
+
+    public void setDataPrevista(Calendar dataPrevista) {
+        this.dataPrevista = dataPrevista;
     }
 
 }
