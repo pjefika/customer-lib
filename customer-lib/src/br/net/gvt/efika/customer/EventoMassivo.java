@@ -11,6 +11,12 @@ package br.net.gvt.efika.customer;
  */
 public class EventoMassivo {
 
+    private String tipoAlarme;
+
+    private String tipoFalha;
+
+    private String tipoAfetacao;
+
     private String desc;
 
     public EventoMassivo() {
@@ -22,6 +28,30 @@ public class EventoMassivo {
 
     public void setDesc(String desc) {
         this.desc = desc;
+    }
+
+    public String getTipoAlarme() {
+        return tipoAlarme;
+    }
+
+    public void setTipoAlarme(String tipoAlarme) {
+        this.tipoAlarme = tipoAlarme;
+    }
+
+    public String getTipoFalha() {
+        return tipoFalha;
+    }
+
+    public void setTipoFalha(String tipoFalha) {
+        this.tipoFalha = tipoFalha;
+    }
+
+    public String getTipoAfetacao() {
+        return tipoAfetacao;
+    }
+
+    public void setTipoAfetacao(String tipoAfetacao) {
+        this.tipoAfetacao = tipoAfetacao;
     }
 
 }
