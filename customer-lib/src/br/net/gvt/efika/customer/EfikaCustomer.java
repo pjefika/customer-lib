@@ -18,6 +18,8 @@ public class EfikaCustomer {
 
     private InventarioLinha linha;
 
+    private InventarioRadius radius;
+
     private List<CustomerAssert> asserts;
 
     private List<EventoMassivo> eventos;
@@ -26,6 +28,7 @@ public class EfikaCustomer {
         rede = new InventarioRede();
         servicos = new InventarioServico();
         linha = new InventarioLinha();
+        radius = new InventarioRadius();
         asserts = new ArrayList<>();
         eventos = new ArrayList<>();
     }
@@ -35,6 +38,7 @@ public class EfikaCustomer {
         rede = new InventarioRede();
         servicos = new InventarioServico();
         linha = new InventarioLinha();
+        radius = new InventarioRadius();
     }
 
     public String getDesignador() {
@@ -107,6 +111,14 @@ public class EfikaCustomer {
 
     public void setEventos(List<EventoMassivo> eventos) {
         this.eventos = eventos;
+
+    public InventarioRadius getRadius() {
+        return radius;
+    }
+
+    public void setRadius(InventarioRadius radius) {
+        this.radius = radius;
+
     }
 
 }
