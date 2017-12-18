@@ -111,6 +111,7 @@ public class EfikaCustomer {
 
     public void setEventos(List<EventoMassivo> eventos) {
         this.eventos = eventos;
+    }
 
     public InventarioRadius getRadius() {
         return radius;
