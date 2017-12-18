@@ -20,11 +20,14 @@ public class EfikaCustomer {
 
     private List<CustomerAssert> asserts;
 
+    private List<EventoMassivo> eventos;
+
     public EfikaCustomer() {
         rede = new InventarioRede();
         servicos = new InventarioServico();
         linha = new InventarioLinha();
         asserts = new ArrayList<>();
+        eventos = new ArrayList<>();
     }
 
     public EfikaCustomer(String designador) {
@@ -96,6 +99,14 @@ public class EfikaCustomer {
 
     public void setDesignadorTv(String designadorTv) {
         this.designadorTv = designadorTv;
+    }
+
+    public List<EventoMassivo> getEventos() {
+        return eventos;
+    }
+
+    public void setEventos(List<EventoMassivo> eventos) {
+        this.eventos = eventos;
     }
 
 }
