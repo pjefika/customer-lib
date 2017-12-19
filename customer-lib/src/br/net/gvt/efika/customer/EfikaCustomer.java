@@ -14,6 +14,8 @@ public class EfikaCustomer {
 
     private InventarioRede rede;
 
+    private InventarioRedeExterna redeExterna;
+
     private InventarioServico servicos;
 
     private InventarioLinha linha;
@@ -25,20 +27,22 @@ public class EfikaCustomer {
     private List<EventoMassivo> eventos;
 
     public EfikaCustomer() {
+        init();
+    }
+
+    public EfikaCustomer(String designador) {
+        this.designador = designador;
+        init();
+    }
+
+    protected void init() {
         rede = new InventarioRede();
+        redeExterna = new InventarioRedeExterna();
         servicos = new InventarioServico();
         linha = new InventarioLinha();
         radius = new InventarioRadius();
         asserts = new ArrayList<>();
         eventos = new ArrayList<>();
-    }
-
-    public EfikaCustomer(String designador) {
-        this.designador = designador;
-        rede = new InventarioRede();
-        servicos = new InventarioServico();
-        linha = new InventarioLinha();
-        radius = new InventarioRadius();
     }
 
     public String getDesignador() {
@@ -120,6 +124,14 @@ public class EfikaCustomer {
     public void setRadius(InventarioRadius radius) {
         this.radius = radius;
 
+    }
+
+    public InventarioRedeExterna getRedeExterna() {
+        return redeExterna;
+    }
+
+    public void setRedeExterna(InventarioRedeExterna redeExterna) {
+        this.redeExterna = redeExterna;
     }
 
 }
