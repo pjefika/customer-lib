@@ -25,6 +25,10 @@ public class EventoMassivo {
 
     private Calendar dataPrevista;
 
+    private Long numeroEvento;
+
+    private String tipoEvento;
+
     public EventoMassivo() {
     }
 
@@ -74,6 +78,22 @@ public class EventoMassivo {
 
     public void setDataPrevista(Calendar dataPrevista) {
         this.dataPrevista = dataPrevista;
+    }
+
+    public Long getNumeroEvento() {
+        return numeroEvento;
+    }
+
+    public void setNumeroEvento(Long numeroEvento) {
+        this.numeroEvento = numeroEvento;
+    }
+
+    public String getTipoEvento() {
+        return tipoEvento;
+    }
+
+    public void setTipoEvento(String tipoEvento) {
+        this.tipoEvento = tipoEvento;
     }
 
 }
