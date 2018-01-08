@@ -20,6 +20,8 @@ public abstract class FullTestAbs {
     protected Calendar dataFim;
 
     protected String mensagem;
+    
+    protected Integer id;
 
     public FullTestAbs() {
     }
@@ -61,6 +63,14 @@ public abstract class FullTestAbs {
 
     public void setMensagem(String mensagem) {
         this.mensagem = mensagem;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
 }
