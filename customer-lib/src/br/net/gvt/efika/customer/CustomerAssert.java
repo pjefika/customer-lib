@@ -6,6 +6,8 @@
 package br.net.gvt.efika.customer;
 
 import br.net.gvt.efika.asserts.AssertsEnum;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  *
@@ -16,6 +18,8 @@ public class CustomerAssert {
     private AssertsEnum asserts;
 
     private Boolean value;
+
+    private final Date creationDate = Calendar.getInstance().getTime();
 
     public CustomerAssert() {
     }
@@ -43,11 +47,15 @@ public class CustomerAssert {
 
     @Override
     public boolean equals(Object obj) {
-        return equals((CustomerAssert)obj);
+        return equals((CustomerAssert) obj);
     }
 
     public boolean equals(CustomerAssert dev) {
         return dev.getAsserts().equals(this.getAsserts()) && dev.getValue().equals(this.getValue());
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
     }
 
 }

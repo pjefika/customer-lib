@@ -1,5 +1,8 @@
 package br.net.gvt.efika.customer;
 
+import br.net.gvt.efika.enums.OrigemRede;
+import br.net.gvt.efika.enums.OrigemPlanta;
+
 /**
  *
  * @author G0042204
