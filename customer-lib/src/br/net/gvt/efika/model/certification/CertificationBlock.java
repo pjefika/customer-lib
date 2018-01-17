@@ -9,7 +9,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 import java.util.List;
 import model.enuns.CertificationBlockName;
-import model.enuns.CertificationResult;
 
 /**
  *

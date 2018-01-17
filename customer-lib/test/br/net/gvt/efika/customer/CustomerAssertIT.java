@@ -6,29 +6,31 @@
 package br.net.gvt.efika.customer;
 
 import br.net.gvt.efika.asserts.AssertsEnum;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.fail;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author G0042204
  */
 public class CustomerAssertIT {
-    
+
     public CustomerAssertIT() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -113,5 +115,5 @@ public class CustomerAssertIT {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
 }
