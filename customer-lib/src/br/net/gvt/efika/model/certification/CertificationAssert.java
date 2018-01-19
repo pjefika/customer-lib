@@ -8,7 +8,6 @@ package br.net.gvt.efika.model.certification;
 import model.enuns.CertificationAssertName;
 import model.enuns.CertificationResult;
 
-
 /**
  *
  * @author G0041775
@@ -20,9 +19,12 @@ public class CertificationAssert {
     private String orientacao;
 
     private CertificationAssertName nome;
-    
+
     public CertificationAssert(CertificationAssertName name) {
         nome = name;
+    }
+
+    public CertificationAssert() {
     }
 
     public CertificationAssert(CertificationAssertName nome, CertificationResult resultado, String orientacao) {

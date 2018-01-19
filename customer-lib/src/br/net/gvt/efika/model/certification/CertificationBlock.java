@@ -23,6 +23,9 @@ public class CertificationBlock extends Certificational {
         this.nome = nome;
     }
 
+    public CertificationBlock() {
+    }
+
     public List<CertificationAssert> getAsserts() {
         if (asserts == null) {
             asserts = new ArrayList<>();
