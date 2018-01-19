@@ -5,6 +5,7 @@
  */
 package br.net.gvt.efika.model.certification;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,14 +16,11 @@ import model.enuns.CertificationBlockName;
  * @author G0041775
  * @param <T>
  */
-@JsonIgnoreProperties({"subject"})
 public abstract class CertificationBlock<T> extends Certificational implements Certificable<T> {
 
     private List<CertificationAssert> asserts;
 
     private CertificationBlockName nome;
-
-    private transient T subject;
 
     public CertificationBlock(CertificationBlockName nome) {
         this.nome = nome;
@@ -45,19 +43,6 @@ public abstract class CertificationBlock<T> extends Certificational implements C
 
     public void setNome(CertificationBlockName nome) {
         this.nome = nome;
-    }
-
-    protected abstract void process();
-
-    @Override
-    public CertificationBlock certify(T t) {
-        this.subject = t;
-        this.process();
-        return this;
-    }
-
-    public T getSubject() {
-        return subject;
     }
 
 }

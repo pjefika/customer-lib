@@ -2,7 +2,6 @@ package br.net.gvt.efika.model.certification;
 
 import br.net.gvt.efika.customer.EfikaCustomer;
 import fulltest.FullTest;
-
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
