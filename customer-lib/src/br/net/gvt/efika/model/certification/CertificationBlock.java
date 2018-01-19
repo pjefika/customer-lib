@@ -5,8 +5,6 @@
  */
 package br.net.gvt.efika.model.certification;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 import java.util.List;
 import model.enuns.CertificationBlockName;
@@ -14,9 +12,8 @@ import model.enuns.CertificationBlockName;
 /**
  *
  * @author G0041775
- * @param <T>
  */
-public abstract class CertificationBlock<T> extends Certificational implements Certificable<T> {
+public class CertificationBlock extends Certificational {
 
     private List<CertificationAssert> asserts;
 
