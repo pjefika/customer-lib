@@ -19,11 +19,11 @@ public class CertificationBlock extends Certificational {
 
     private CertificationBlockName nome;
 
-    public CertificationBlock(CertificationBlockName nome) {
-        this.nome = nome;
+    public CertificationBlock() {
     }
 
-    public CertificationBlock() {
+    public CertificationBlock(CertificationBlockName nome) {
+        this.nome = nome;
     }
 
     public List<CertificationAssert> getAsserts() {
