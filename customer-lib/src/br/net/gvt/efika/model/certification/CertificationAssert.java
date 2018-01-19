@@ -5,8 +5,10 @@
  */
 package br.net.gvt.efika.model.certification;
 
-import model.enuns.CertificationAssertName;
-import model.enuns.CertificationResult;
+import br.net.gvt.efika.model.certification.enuns.CertificationAssertName;
+import br.net.gvt.efika.model.certification.enuns.CertificationResult;
+
+
 
 /**
  *

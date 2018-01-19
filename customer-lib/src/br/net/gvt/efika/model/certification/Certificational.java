@@ -5,7 +5,8 @@
  */
 package br.net.gvt.efika.model.certification;
 
-import model.enuns.CertificationResult;
+import br.net.gvt.efika.model.certification.enuns.CertificationResult;
+
 
 
 /**

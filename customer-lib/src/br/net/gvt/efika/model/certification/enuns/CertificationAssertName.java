@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.enuns;
+package br.net.gvt.efika.model.certification.enuns;
 
 /**
  *
@@ -13,6 +13,8 @@ public enum CertificationAssertName {
 
     HAS_BLOQ_RADIUS,
     IS_INV_REDE_EQUALS_RADIUS,
+    HAS_INV_REDE,
+    HAS_INV_SERV,
     HAS_BLOQ_INVENTARIO,
     IS_ADM_UP,
     IS_OPER_UP,

@@ -5,9 +5,9 @@
  */
 package br.net.gvt.efika.model.certification;
 
+import br.net.gvt.efika.model.certification.enuns.CertificationBlockName;
 import java.util.ArrayList;
 import java.util.List;
-import model.enuns.CertificationBlockName;
 
 /**
  *
