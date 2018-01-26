@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.enuns;
+package br.net.gvt.efika.model.certification.enuns;
 
 /**
  *
@@ -11,7 +11,7 @@ package model.enuns;
  */
 public enum TasksEnum {
 
-    CERTIFICATION("Certificação"), AUTH("Autenticação"), CADASTRO("Cadastro");
+    CERTIFICATION("Certificação"), AUTH("Autenticação"), CADASTRO("Cadastro"), CONF_REDE("Confiabilidade de Rede");
 
     private final String desc;
 
