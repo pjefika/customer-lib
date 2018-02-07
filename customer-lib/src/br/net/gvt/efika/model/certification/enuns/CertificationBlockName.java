@@ -5,15 +5,28 @@
  */
 package br.net.gvt.efika.model.certification.enuns;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 /**
  *
  * @author G0041775
  */
+@JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum CertificationBlockName {
 
-    CADASTRO,
-    CONECTIVIDADE,
-    SERVICOS,
-    PERFORMANCE;
+    CADASTRO("Cadastro"),
+    CONECTIVIDADE("Conectividade"),
+    SERVICOS("Serviços"),
+    PERFORMANCE("Performance");
+
+    private final String beautyName;
+
+    private CertificationBlockName(String beautyName) {
+        this.beautyName = beautyName;
+    }
+
+    public String getBeautyName() {
+        return beautyName;
+    }
 
 }
