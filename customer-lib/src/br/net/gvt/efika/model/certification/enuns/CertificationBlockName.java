@@ -29,4 +29,8 @@ public enum CertificationBlockName {
         return beautyName;
     }
 
+    public String getName() {
+        return this.name();
+    }
+
 }
