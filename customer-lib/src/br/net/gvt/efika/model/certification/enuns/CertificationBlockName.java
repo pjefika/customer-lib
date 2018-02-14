@@ -5,7 +5,10 @@
  */
 package br.net.gvt.efika.model.certification.enuns;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
 
 /**
  *
@@ -29,8 +32,25 @@ public enum CertificationBlockName {
         return beautyName;
     }
 
+//    public String getName() {
+//        return this.name();
+//    }
+
+    @JsonCreator
+    public static CertificationBlockName fromNode(JsonNode node) {
+        if (!node.has("name")) {
+            return null;
+        }
+
+        String name = node.get("name").asText();
+
+        return CertificationBlockName.valueOf(name);
+    }
+
+    // 3
+    @JsonProperty
     public String getName() {
-        return this.name();
+        return name();
     }
 
 }

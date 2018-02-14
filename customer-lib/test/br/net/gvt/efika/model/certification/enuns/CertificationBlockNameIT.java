@@ -5,12 +5,11 @@
  */
 package br.net.gvt.efika.model.certification.enuns;
 
-import br.net.gvt.efika.util.util.json.JacksonMapper;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import util.JacksonMapper;
 
 /**
  *
