@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.enums;
+package br.net.gvt.efika.customer.model.certification.enums;
 
 /**
  *
- * @author G0041775
+ * @author G0042204
  */
-public enum TecnologiaTv {
-    DTH,
-    HIBRIDA,
-    IPTV
+public enum TaskResultState {
+
+    OK, EXCEPTION;
+
 }

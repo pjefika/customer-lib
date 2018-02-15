@@ -5,6 +5,7 @@
  */
 package br.net.gvt.efika.model.certification.enuns;
 
+import br.net.gvt.efika.customer.model.certification.enums.CertificationBlockName;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

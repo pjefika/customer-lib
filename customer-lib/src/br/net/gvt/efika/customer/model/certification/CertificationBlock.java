@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.model.certification;
+package br.net.gvt.efika.customer.model.certification;
 
-import br.net.gvt.efika.model.certification.enuns.CertificationBlockName;
+import br.net.gvt.efika.customer.model.certification.enums.CertificationBlockName;
 import java.util.ArrayList;
 import java.util.List;
 

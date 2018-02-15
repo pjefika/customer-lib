@@ -5,7 +5,8 @@
  */
 package br.net.gvt.efika.customer;
 
-import br.net.gvt.efika.asserts.AssertsEnum;
+import br.net.gvt.efika.customer.model.customer.CustomerAssert;
+import br.net.gvt.efika.customer.model.customer.asserts.AssertsEnum;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 import static junit.framework.Assert.fail;

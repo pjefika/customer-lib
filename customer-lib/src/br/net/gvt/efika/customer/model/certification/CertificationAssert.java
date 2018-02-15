@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.model.certification;
+package br.net.gvt.efika.customer.model.certification;
 
-import br.net.gvt.efika.model.certification.enuns.CertificationAssertName;
-import br.net.gvt.efika.model.certification.enuns.CertificationResult;
+import br.net.gvt.efika.customer.model.certification.enums.CertificationAssertName;
+import br.net.gvt.efika.customer.model.certification.enums.CertificationResult;
 
 
 

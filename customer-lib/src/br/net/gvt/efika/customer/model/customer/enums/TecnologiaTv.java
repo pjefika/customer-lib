@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.asserts;
-
-import br.net.gvt.efika.customer.CustomerAssert;
+package br.net.gvt.efika.customer.model.customer.enums;
 
 /**
  *
- * @author G0042204
+ * @author G0041775
  */
-public interface EfikaAssertable {
-    
-    public CustomerAssert claim();
-    
+public enum TecnologiaTv {
+    DTH,
+    HIBRIDA,
+    IPTV
 }

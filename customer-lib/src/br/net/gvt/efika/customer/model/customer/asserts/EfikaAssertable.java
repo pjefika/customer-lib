@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.customer;
+package br.net.gvt.efika.customer.model.customer.asserts;
+
+import br.net.gvt.efika.customer.model.customer.CustomerAssert;
 
 /**
  *
  * @author G0042204
  */
-public enum TipoRede {
-    METALICA, GPON;
+public interface EfikaAssertable {
+    
+    public CustomerAssert claim();
+    
 }

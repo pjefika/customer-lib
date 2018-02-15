@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.enums;
+package br.net.gvt.efika.customer.model.customer.enums;
 
 /**
  *
- * @author G0042204
+ * @author G0041775
  */
-public enum OrigemRede {
-
-    ONLINE, OFFLINE;
-
+public enum TecnologiaLinha {
+    TDM,
+    IMS_H248,
+    IMS_V5,
+    SIP
 }

@@ -1,7 +1,8 @@
-package br.net.gvt.efika.customer;
+package br.net.gvt.efika.customer.model.customer;
 
-import br.net.gvt.efika.enums.OrigemRede;
-import br.net.gvt.efika.enums.OrigemPlanta;
+import br.net.gvt.efika.customer.model.customer.enums.TipoRede;
+import br.net.gvt.efika.customer.model.customer.enums.OrigemRede;
+import br.net.gvt.efika.customer.model.customer.enums.OrigemPlanta;
 
 /**
  *

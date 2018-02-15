@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.enuns;
+package br.net.gvt.efika.customer.model.customer.enums;
 
 /**
  *
  * @author G0042204
  */
-public enum TaskState {
+public enum OrigemPlanta {
 
-    PENDING, RUNNING, EXECUTED;
+    VIVO1, VIVO2;
 
 }

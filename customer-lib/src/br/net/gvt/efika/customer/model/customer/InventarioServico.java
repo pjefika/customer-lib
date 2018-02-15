@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.net.gvt.efika.customer;
+package br.net.gvt.efika.customer.model.customer;
 
-import br.net.gvt.efika.enums.TecnologiaTv;
-import br.net.gvt.efika.enums.TecnologiaLinha;
+import br.net.gvt.efika.customer.model.customer.enums.TecnologiaTv;
+import br.net.gvt.efika.customer.model.customer.enums.TecnologiaLinha;
 
 /**
  *

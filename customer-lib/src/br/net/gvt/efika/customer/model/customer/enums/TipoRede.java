@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.enuns;
+package br.net.gvt.efika.customer.model.customer.enums;
 
 /**
  *
  * @author G0042204
  */
-public enum TaskResultState {
-
-    OK, EXCEPTION;
-
+public enum TipoRede {
+    METALICA, GPON;
 }
