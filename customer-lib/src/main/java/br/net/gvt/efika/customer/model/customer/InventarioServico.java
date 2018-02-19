@@ -5,6 +5,7 @@
  */
 package br.net.gvt.efika.customer.model.customer;
 
+import br.net.gvt.efika.customer.model.customer.enums.OrigemInventarioServico;
 import br.net.gvt.efika.customer.model.customer.enums.TecnologiaTv;
 import br.net.gvt.efika.customer.model.customer.enums.TecnologiaLinha;
 
@@ -13,6 +14,8 @@ import br.net.gvt.efika.customer.model.customer.enums.TecnologiaLinha;
  * @author G0042204
  */
 public class InventarioServico {
+
+    private OrigemInventarioServico origem;
 
     private Long velDown, velUp;
 
@@ -53,6 +56,14 @@ public class InventarioServico {
 
     public void setTipoLinha(TecnologiaLinha tipoLinha) {
         this.tipoLinha = tipoLinha;
+    }
+
+    public OrigemInventarioServico getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(OrigemInventarioServico origem) {
+        this.origem = origem;
     }
 
 }
