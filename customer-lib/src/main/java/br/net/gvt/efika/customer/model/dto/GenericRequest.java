@@ -55,10 +55,6 @@ public class GenericRequest {
         this.system = system;
     }
 
-    /**
-     * Tipo do parâmetro enviado
-     *
-     */
     public ParamTypeEnum getParamType() {
         return paramType;
     }
@@ -67,10 +63,7 @@ public class GenericRequest {
         this.paramType = paramType;
     }
 
-    /**
-     * Data da solicitação
-     *
-     */
+
     public Date getRequestDate() {
         return requestDate;
     }
@@ -132,5 +125,7 @@ public class GenericRequest {
     public void setCustomer(EfikaCustomer customer) {
         this.customer = customer;
     }
+    
+    
 
 }
