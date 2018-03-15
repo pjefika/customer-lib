@@ -1,10 +1,10 @@
 package br.net.gvt.efika.customer.model.dto;
 
+import br.net.gvt.efika.customer.model.enums.ParamTypeEnum;
 import br.net.gvt.efika.customer.model.enums.SystemEnum;
 import br.net.gvt.efika.efika_customer.model.customer.EfikaCustomer;
 import java.util.Objects;
 import java.util.Date;
-import br.net.gvt.efika.customerAPI.model.enums.ParamTypeEnum;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
