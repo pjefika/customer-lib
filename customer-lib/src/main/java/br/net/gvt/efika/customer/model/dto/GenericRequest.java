@@ -12,15 +12,16 @@ public class GenericRequest {
 
     private String parameter;
 
-    @NotEmpty
+    @NotEmpty(message = "Parâmetro necesssário!")
     private String executor;
 
     private EfikaCustomer customer;
-    @NotNull
+
+    @NotNull(message = "Parâmetro necesssário!")
     private SystemEnum system;
-    
+
     private ParamTypeEnum paramType;
-    
+
     private Date requestDate;
 
     public GenericRequest(String parameter, String executor) {
@@ -62,7 +63,6 @@ public class GenericRequest {
     public void setParamType(ParamTypeEnum paramType) {
         this.paramType = paramType;
     }
-
 
     public Date getRequestDate() {
         return requestDate;
@@ -125,7 +125,5 @@ public class GenericRequest {
     public void setCustomer(EfikaCustomer customer) {
         this.customer = customer;
     }
-    
-    
 
 }
