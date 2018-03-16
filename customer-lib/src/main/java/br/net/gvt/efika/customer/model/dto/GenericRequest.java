@@ -5,14 +5,13 @@ import br.net.gvt.efika.customer.model.enums.SystemEnum;
 import br.net.gvt.efika.efika_customer.model.customer.EfikaCustomer;
 import java.util.Objects;
 import java.util.Date;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public class GenericRequest {
 
     private String parameter;
 
-    @NotEmpty(message = "Parâmetro necesssário!")
+    @NotNull(message = "Parâmetro necesssário!")
     private String executor;
 
     private EfikaCustomer customer;
