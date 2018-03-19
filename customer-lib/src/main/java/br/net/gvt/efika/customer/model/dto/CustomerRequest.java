@@ -11,23 +11,19 @@ import br.net.gvt.efika.efika_customer.model.customer.EfikaCustomer;
  *
  * @author G0042204
  */
-public class CustomerRequest extends GenericRequest{
+public class CustomerRequest extends GenericRequest {
 
-    private EfikaCustomer cust;
+    private EfikaCustomer customer;
 
     public CustomerRequest() {
     }
 
-    public EfikaCustomer getCust() {
-        return cust;
+    public EfikaCustomer getCustomer() {
+        return customer;
     }
 
-    public void setCust(EfikaCustomer cust) {
-        this.cust = cust;
+    public void setCustomer(EfikaCustomer customer) {
+        this.customer = customer;
     }
-    
-    
-    
-    
 
 }
