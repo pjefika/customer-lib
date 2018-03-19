@@ -2,7 +2,6 @@ package br.net.gvt.efika.customer.model.dto;
 
 import br.net.gvt.efika.customer.model.enums.ParamTypeEnum;
 import br.net.gvt.efika.customer.model.enums.SystemEnum;
-import br.net.gvt.efika.efika_customer.model.customer.EfikaCustomer;
 import java.util.Objects;
 import java.util.Date;
 import javax.validation.constraints.NotNull;
@@ -13,8 +12,6 @@ public class GenericRequest {
 
     @NotNull(message = "Parâmetro necesssário!")
     private String executor;
-
-    private EfikaCustomer customer;
 
     @NotNull(message = "Parâmetro necesssário!")
     private SystemEnum system;
@@ -115,14 +112,6 @@ public class GenericRequest {
             return "null";
         }
         return o.toString().replace("\n", "\n    ");
-    }
-
-    public EfikaCustomer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(EfikaCustomer customer) {
-        this.customer = customer;
     }
 
 }
