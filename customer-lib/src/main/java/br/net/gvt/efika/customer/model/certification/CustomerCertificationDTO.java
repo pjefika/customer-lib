@@ -28,7 +28,7 @@ public class CustomerCertificationDTO extends Certificational {
 
     private EfikaCustomer customer;
 
-    private String executor;
+    private String executor, fkId;
 
     private FullTest fulltest;
 
@@ -93,6 +93,14 @@ public class CustomerCertificationDTO extends Certificational {
 
     public void setFulltest(FullTest fulltest) {
         this.fulltest = fulltest;
+    }
+
+    public String getFkId() {
+        return fkId;
+    }
+
+    public void setFkId(String fkId) {
+        this.fkId = fkId;
     }
 
 }
