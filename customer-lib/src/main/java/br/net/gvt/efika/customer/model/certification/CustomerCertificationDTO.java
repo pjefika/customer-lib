@@ -2,6 +2,7 @@ package br.net.gvt.efika.customer.model.certification;
 
 import br.net.gvt.efika.efika_customer.model.customer.EfikaCustomer;
 import br.net.gvt.efika.fulltest.model.fulltest.FullTest;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -32,6 +33,7 @@ public class CustomerCertificationDTO extends Certificational {
 
     private FullTest fulltest;
 
+    @JsonIgnore
     private String tipo;
 
     public String getTipo() {
