@@ -20,7 +20,8 @@ public enum CertificationBlockName {
     CADASTRO("Cadastro"),
     CONECTIVIDADE("Conectividade"),
     SERVICOS("Serviços"),
-    PERFORMANCE("Performance");
+    PERFORMANCE("Performance"),
+    HPNA("Diagnóstico HPNA");
 
     private final String beautyName;
 

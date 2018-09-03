@@ -30,6 +30,7 @@ public enum CertificationAssertName {
     IS_REDE_TV_OK,
     HAS_MAC_DSLAM,
     IS_AUTH_OK,
-    IS_REDE_BANDA_OK;
+    IS_REDE_BANDA_OK,
+    IS_DIAG_HPNA_OK;
 
 }
